@@ -1,0 +1,9 @@
+{{ define "main" }}
+    {{ if .Title }} <h1>{{.Title}}</h1> {{ end }}
+    {{ if .Params.subtitle }} <span class="subtitle">{{.}}</span> {{ end }}
+    {{ with .Params.author }}<span class="author">{{ . }}</span>{{ end }}            
+    {{ if .Params.date }}<span class="date">Last modified {{ .Date.Format "2006-01-02" }}</span>{{ end }}
+    <div>
+        {{.Content}}
+    </div>
+{{ end }}

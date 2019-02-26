@@ -1,0 +1,34 @@
+<!DOCTYPE html>                                                                  
+<html lang="{{ .Site.LanguageCode }}"> 
+    <head>
+        {{ block "head" . }}
+            {{ partial "head.html" . }}
+        {{ end }}
+    </head>
+    <body>
+        {{ block "menu" . }}
+            <nav>
+                <ul class="menu {{if .IsHome }} mainpage {{end}}"> 
+                {{ range .Site.Menus.main }}
+                <li><a href="{{ .URL | relURL }}" id="{{ .Name }}">{{ .Name }}</a></li>
+                {{ end }}
+                </ul>
+            </nav>
+        {{ end }}
+        {{ block "title" . }}
+            {{ if .Title }} <h1 class="title">{{ .Title }}</h1> {{ end }}
+        {{ end }}
+        {{ block "subtitle" . }}
+            {{ if .Params.subtitle }} <span class="subtitle">{{.}}</span> {{ end }}
+        {{ end }}
+        {{ block "content" . }}
+            <main>
+                {{ .Content }}
+            </main>
+        {{ end }}
+        {{ block "footer" . }}
+            {{ partial "foot_contact.html" . }}
+        {{ end }}
+    </body>
+</html>
+
