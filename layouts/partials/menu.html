@@ -1,14 +1,7 @@
-        <nav>
-{{if not .IsHome }}
-        <ul class="menu"> 
-{{end}}
-{{if .IsHome }}
-        <ul class="menu mainpage"> 
-{{end}}
-
-            {{ range .Site.Menus.main }}
+<nav>
+    <ul class="menu {{ if .IsHome }}mainpage{{ end }}"> 
+        {{ range .Site.Menus.main }}
             <li><a href="{{ .URL | relURL }}" id="{{ .Name }}">{{ .Name }}</a></li>
-            {{ end }}
-
-        </ul>
-        </nav>
+        {{ end }}
+    </ul>
+</nav>

@@ -19,7 +19,7 @@
             {{ if .Title }} <h1 class="title">{{ .Title }}</h1> {{ end }}
         {{ end }}
         {{ block "subtitle" . }}
-            {{ if .Params.subtitle }} <span class="subtitle">{{.}}</span> {{ end }}
+            {{ if .Params.subtitle }} <span class="subtitle">{{ .Params.subtitle }}</span> {{ end }}
         {{ end }}
         {{ block "content" . }}
             <main>

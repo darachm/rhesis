@@ -2,43 +2,31 @@
     &nbsp; <br/>
 {{ end }}
 
-{{ define "main" }}
-<h1 class="title">{{ .Title | markdownify }}</h1>
-</br>
-{{ with .Params.author }}<span class="author">{{ . }}</span>{{ end }}
-{{ if .Params.date }}<span class="date">Last modified {{ .Date.Format "2006-01-02" }}</span>{{ end }}
-
-{{ $taxo := "directors" }} <!-- Use the plural form here -->
-{{ with .Param $taxo }}
-    <strong>Director{{ if gt (len .) 1 }}s{{ end }}:</strong>
-    {{ range $index, $director := . }}
-        {{- if gt $index 0 }}, {{ end -}}
-        {{ with $.Site.GetPage (printf "/%s/%s" $taxo $director) -}}
-            <a href="{{ .Permalink }}">{{ $director }}</a>
-        {{- end -}}
-    {{- end -}}
+{{ define "subtitle" }}
+    {{ if .Params.subtitle }}<span class="subtitle">{{ .Params.subtitle }}</span> {{ end }}
+    {{ if .Params.author }}<span class="author">{{ .Params.author }}</span>{{ end }}
+    {{ if .Params.date }}<span class="date">Last modified {{ .Date.Format "2006-01-02" }}</span>{{ end }}
 {{ end }}
 
-<hr>
-{{ if .Params.toc }}
-    <aside>{{.TableOfContents}}</aside>
+
+{{ define "content" }}
+
     <hr>
-{{ end }}
-
-<div>
-{{ .Content }}
-</div>
-{{ end }}
-
-<ul>
-    {{ range .Site.Taxonomies.series.golang }}
-        <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+    {{ if .Params.toc }}
+        <aside>{{.TableOfContents}}</aside>
+        <hr>
     {{ end }}
-</ul>
+
+    <main>
+        {{ .Content }}
+    </main>
+
+{{ end }}
+
 
 {{ define "footer" }}
-    {{ partial "foot_contact.html" . }}
     {{ partial "menu.html" . }}
+    {{ partial "foot_contact.html" . }}
     {{ partial "disqus.html" . }}
 {{ end }}
 

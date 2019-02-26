@@ -1,17 +1,3 @@
 {{ define "main" }}
-    {{ if .Title }}
-        <h1>{{.Title}}</h1>
-    {{ end }}
-    {{ if .Params.subtitle }}
-        <span class="subtitle">{{.}}</span>
-    {{ end }}
-    <div class="main-content">
-        {{.Content}}
-    </div>
-    <div>
-        <!-- Note that .Pages is the same as .Site.RegularPages on the homepage template. -->
-        {{ range first 10 .Pages }}
-            {{ .Render "summary"}}
-        {{ end }}
-    </div>
+    {{.Content}}
 {{ end }}
