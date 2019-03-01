@@ -5,15 +5,9 @@
             {{ partial "head.html" . }}
         {{ end }}
     </head>
-    <body>
+    <body class="{{ block "body_class" . }}{{ end }}">
         {{ block "menu" . }}
-            <nav>
-                <ul class="menu {{if .IsHome }} mainpage {{end}}"> 
-                {{ range .Site.Menus.main }}
-                <li><a href="{{ .URL | relURL }}" id="{{ .Name }}">{{ .Name }}</a></li>
-                {{ end }}
-                </ul>
-            </nav>
+            {{ partial "menu.html" . }}
         {{ end }}
         {{ block "title" . }}
             {{ if .Title }} <h1 class="title">{{ .Title }}</h1> {{ end }}

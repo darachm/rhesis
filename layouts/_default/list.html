@@ -1,14 +1,20 @@
 {{ define "content" }}
     <main>
         {{.Content}}
+        <ul class="list">
+        <!-- Ranges through content/posts/*.md -->
+        {{ range .Pages }}
+            <li>
+                <a href="{{.Permalink}}">
+                    {{.Title}} 
+                    {{ if eq $.Params.nodate true }}
+                    {{ else }}
+                        | {{.Date.Format "2006-01-02"}}
+                    {{ end }}
+                    </a>
+            </li>
+        {{ end }}
+        </ul>
     </main>
-    <ul>
-    <!-- Ranges through content/posts/*.md -->
-    {{ range .Pages }}
-        <li>
-            <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
-        </li>
-    {{ end }}
-    </ul>
 {{ end }}
 
