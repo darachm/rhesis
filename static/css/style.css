@@ -41,6 +41,21 @@ nav.menu > ul > a {
     margin: 0.2em;
     background: #ccc;
 }
+a#home:hover {
+    background-color: #fc8d62;
+}
+a#about:hover {
+    background-color: #a6d854;
+}
+a#posts-pages:hover {
+    background-color: #a0ffff;
+}
+a#posts-by-tags:hover {
+    background-color: #ffa0ff;
+}
+a#links:hover {
+    background-color: #ffff99;
+}
 
 /* posts list */
 ul.list {

@@ -1,7 +1,7 @@
 <nav class="menu {{ if .IsHome }} mainpage {{ end }}">
     <ul>
         {{ range .Site.Menus.main }}
-            <a href="{{ .URL | relURL }}" id="{{ .Name }}"><li>{{ .Name }}</li></a>
+            <a href="{{ .URL | relURL }}" id="{{ anchorize .Name }}"><li>{{ .Name }}</li></a>
         {{ end }}
     </ul>
 </nav>
