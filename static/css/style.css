@@ -1,0 +1,62 @@
+html {
+    font-family: DejaVu Sans;
+    font-weight: 100;
+}
+
+body {
+    max-width: 640px;
+    margin: auto;
+}
+
+body.terms { max-width: 1280px; margin: auto; }
+
+
+/* footer contact info */
+footer.contact {
+    clear:both;
+    max-width: 50%;
+    margin: auto;
+}
+footer.contact a {
+    margin: 1em;
+}
+
+/* navigation menu */
+nav.menu {
+    width: 100%;
+    margin: auto;
+    padding: 1em;
+}
+nav.menu > ul {
+    display: block;
+    margin: 1em;
+    padding: 1em;
+}
+nav.menu > ul > a > li {
+    list-style-type: none;
+}
+nav.menu > ul > a {
+    float: left;
+    padding: 1em;
+    margin: 0.2em;
+    background: #ccc;
+}
+
+/* posts list */
+ul.list {
+    list-style-type: none;
+}
+
+/* tags list */
+ul#tag_list { }
+ul#tag_list > li {
+    list-style-type: none;
+    border: 1px black solid;
+    width: 16em;
+    margin: 0.5em;
+    padding: 0.5em;
+    float:left;
+}
+ul#tag_list > li > li {
+    list-style-type: none;
+}
