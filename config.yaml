@@ -1,0 +1,31 @@
+title: "rhesis"
+languageCode: "en-us"
+
+#baseURL: "http://www.rhesis.com"
+# canonifyURLs : false
+
+permalinks:
+    post: "/post/:year/:month/:day/:slug/"
+    note: "/note/:year/:month/:day/:slug/"
+
+taxonomies:
+    tag: tags
+
+menu:
+    main: 
+        - name     : "home"
+          url    : "/"
+          weight : 1
+        - name     : "about"
+          url    : "/about/"
+          weight : 2
+        - name     : "posts/pages"
+          url    : "/posts/"
+          weight : 3
+        - name     : "posts-by-tags"
+          url    : "/tags/"
+          weight : 4
+        - name     : "links"
+          url    : "/links/"
+          weight : 5
+
