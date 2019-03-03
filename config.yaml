@@ -25,7 +25,3 @@ menu:
         - name     : "posts-by-tags"
           url    : "/tags/"
           weight : 4
-        - name     : "links"
-          url    : "/links/"
-          weight : 5
-

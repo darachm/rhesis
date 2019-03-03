@@ -1,7 +1,12 @@
 html {
-    font-family: DejaVu Sans;
+    font-family: 'DejaVu Sans',sans-serif;
     font-weight: 100;
+    line-height: 1.5em;
 }
+
+code { font-family: 'Lucida Console', Monaco, monospace; }
+
+#disqus_thread { clear: both; margin-top: 100px; }
 
 body {
     max-width: 640px;
@@ -10,15 +15,21 @@ body {
 
 body.terms { max-width: 1280px; margin: auto; }
 
+hr { border-style: dashed; color: #aaa; }
 
 /* footer contact info */
 footer.contact {
     clear:both;
     max-width: 50%;
     margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 footer.contact a {
     margin: 1em;
+    padding: 0.2em;
+    background: #f6f6f6;
+    border-radius: 8px;
 }
 
 /* navigation menu */
@@ -39,8 +50,10 @@ nav.menu > ul > a {
     float: left;
     padding: 1em;
     margin: 0.2em;
-    background: #ccc;
+    background: #f6f6f6;
+    border-radius: 16px;
 }
+hr { color: #eee; }
 a#home:hover {
     background-color: #fc8d62;
 }
@@ -55,6 +68,43 @@ a#posts-by-tags:hover {
 }
 a#links:hover {
     background-color: #ffff99;
+}
+
+/* fade */
+nav.menu { 
+    opacity:.5; animation-duration:3s; animation-name:fadeout;
+}
+nav.menu:hover { 
+    opacity:1; animation-duration:1s; animation-name:fadein;
+}
+footer.contact { 
+    opacity:.5; animation-duration:3s; animation-name:fadeout;
+}
+footer:hover.contact a { 
+    opacity:1; 
+    animation: fadeinrainbow linear 1s infinite;
+}
+/*.mainpage { opacity:1; animation-name:none; }
+.mainpage:hover { opacity:1; animation-name:none;}*/
+@keyframes fadein {
+    from { opacity:0.5; }
+    to { opacity:1.0; }
+}
+@keyframes fadeout {
+    from { opacity:1.0; }
+    to { opacity:0.5; }
+}
+@keyframes fadeout {
+    from { opacity:1.0; }
+    to { opacity:0.5; }
+}
+@keyframes fadeinrainbow {
+    0% { opacity:1.0; background-color:#f00; }
+    20% { opacity:1.0; background-color:#ff0; }
+    40% { opacity:1.0; background-color:#fff; } 
+    60% { opacity:1.0; background-color:#0ff; } 
+    80% { opacity:1.0; background-color:#00f; } 
+    100% { opacity:1.0; background-color:#000; } 
 }
 
 /* posts list */
@@ -72,6 +122,28 @@ ul#tag_list > li {
     padding: 0.5em;
     float:left;
 }
+ul#tag_list > li:hover { background: #f0f0f0;}
 ul#tag_list > li > li {
     list-style-type: none;
 }
+
+/* texts */
+h1 { font-weight: 100; font-size: 1.8em; }
+h2 { font-weight: 100; font-size: 1.6em; }
+h3 { font-weight: 100; font-size: 1.4em; }
+h4 { font-weight: 100; font-size: 1.2em; }
+h5 { font-weight: 100; font-size: 1.2em; }
+h6 { font-weight: 100; font-size: 1.2em; }
+
+/* main contents */
+main img, main video {
+    max-width:100%;
+    display:block;
+    margin:auto;
+}
+
+code { 
+    background: #fffff9; 
+}
+
+
