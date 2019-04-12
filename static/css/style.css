@@ -17,6 +17,11 @@ body.terms { max-width: 1280px; margin: auto; }
 
 hr { border-style: dashed; color: #aaa; }
 
+/* title */
+h1.title {
+    line-height: 1.2em;
+}
+
 /* footer contact info */
 footer.contact {
     clear:both;
