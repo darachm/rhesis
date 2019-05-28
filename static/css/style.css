@@ -82,9 +82,11 @@ nav.menu {
 nav.menu:hover { 
     opacity:1; animation-duration:1s; animation-name:fadein;
 }
+nav.menu.mainpage { opacity:1; animation-name: none; }
 footer.contact { 
     opacity:.5; animation-duration:3s; animation-name:fadeout;
 }
+nav.contact.mainpage { opacity:1; animation-name: none; }
 footer:hover.contact a { 
     opacity:1; 
     animation: fadeinrainbow linear 1s infinite;
