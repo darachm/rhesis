@@ -1,7 +1,7 @@
 ---
 title: "Scales of inquiry"
 date: 2018-09-22
-draft: true
+draft: false
 ---
 
 This is inspired by Syndney Brenner's 2009 article 
