@@ -87,3 +87,52 @@ useful in thinking about how method development and science interact.
 
 Some times you just gotta blow your own glass apparatus and roll your own code.
     
+# ["The rediscovery of the unique"](http://fortnightlyreview.co.uk/2017/08/the-rediscovery-of-the-unique/)
+
+H.G. Wells in 1891 discusses the paralysis of 
+reductionism without synthesis. A quote:
+
+> When we teach a child to count, we poison its 
+> mind almost irrevocably. When a man speaks of a 
+> thousand of bricks, he never dreams that he means
+> a unique collection of uniques that his mind 
+> cannot grasp individually. When he speaks of a 
+> thousand years, the suspicion never crosses his 
+> mind that he is referring to a unique series of
+> unique gyrations on the part of the earth we 
+> inhabit; and yet, if he is an educated man, he 
+> knows perfectly well that the shape of the 
+> earth’s orbit and the earth’s velocity are 
+> things constantly changing! He is inoculated 
+> with the arithmetical virus; he lets a watch 
+> and a calendar blind him to the fact that every 
+> moment of his life is a miracle and a mystery.
+
+It's a usefully poetic way of thinking about the
+eternal struggle of the needs for generalizing the
+models learned in science, and reminds us that
+there are two steps --- learning specifically and 
+testing generally the hypotheses we use to build
+more complex ideas. Or something like that.
+
+And then there's the ending, which I cribbed for
+the frontpiece of my phd thesis:
+
+> Science is a match that man has just got alight. 
+> He thought he was in a room — in moments of devotion,
+> a temple — and that his light would be reflected 
+> from and display walls inscribed with wonderful 
+> secrets and pillars carved with philosophical systems
+> wrought into harmony. 
+>
+> It is a curious sensation, now
+> that the preliminary splutter is over and the flame 
+> burns up clear, to see his hands lit and just a 
+> glimpse of himself and the patch he stands on 
+> visible, and around him, in place of all that human 
+> comfort and beauty he anticipated, darkness still.
+
+It nicely captured the feeling from 5.5 years of my 
+life.
+
+
