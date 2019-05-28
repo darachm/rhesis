@@ -2,6 +2,7 @@
 title: "about"
 ---
 
+
 This website is primarily to serve some of the posts about bugs and
 fixes.
 It is arranged by
