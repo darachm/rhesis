@@ -135,4 +135,15 @@ the frontpiece of my phd thesis:
 It nicely captured the feeling from 5.5 years of my 
 life.
 
-
+# ["The Logic of Chance"](https://www.amazon.com/gp/offer-listing/0133381064/)
+                
+Koonin. This was my introduction to the amazing work folks have
+been doing with tons of microbial genomes to explore the tree
+of life, or rather forests of trees of life. To compare it to
+genetics, it's like "systems evolutionary biology", in that its
+in making this comparisons at this higher level of how the whole
+system of genomes has evolved, doing this gives them insight into
+a new perspective on evolutionary biology. Fun read, and it might
+be accessible for non-biologists as well, if my memory serves
+me right.
+[Here's a better review.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3400892/)
