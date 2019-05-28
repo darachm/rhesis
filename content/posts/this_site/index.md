@@ -1,6 +1,7 @@
 ---
 title: "How this site is put together : hugo + git + nearlyfreespeech.com "
 date: 2018-07-13
+page: true
 tags:
     - how-to
     - git
