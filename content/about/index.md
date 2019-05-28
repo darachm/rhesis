@@ -16,6 +16,9 @@ They've contributed to some scientific papers (ORCID
 <img src="./orcid.jpeg" height="20" style="display:inline;"></a>).
 Preferred pronouns he/him, editor vi/vim. 
 
+<img src="../posts/yashica_lynx_14/shutter_small.gif" height="200" 
+    style="display:inline;float:right;;"></a>
+
 <!-- link CV here -->
 
 You are an integral part of this website's function.  
