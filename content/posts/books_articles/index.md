@@ -77,3 +77,13 @@ classic figures. Development. Evolution. Etc.
 <hr>
 <sup>1</sup> To paraphrase the Buggles: ["sequencing killed the biochemistry star"](https://www.youtube.com/watch?v=Iwuy4hHO3YQ)
 <hr>
+
+# [Advice to a young scientist](http://dx.doi.org/10.1118/1.594826)
+    
+Mendawar writes a fun one, especially if you're just starting out in the 
+sciences. I really like the description of apparatus construction. The words
+seem arcane in the age of kits and methods (for my field), but the metaphor is 
+useful in thinking about how method development and science interact.
+
+Some times you just gotta blow your own glass apparatus and roll your own code.
+    
